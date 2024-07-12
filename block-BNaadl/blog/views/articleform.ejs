@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Article Add</title>
+  </head>
+  <body class="bg-blue-950">
+    <div class="flex items-center justify-between w-4/5 m-auto mt-4">
+      <a class="text-2xl font-bold p-2 text-white" href="#">Articles </a>
+      <nav>
+        <a
+          class="text-lg font-bold hover:bg-red-800 rounded border-2 p-2 text-white"
+          href="#"
+          >Add Articles</a
+        >
+      </nav>
+    </div>
+    <form action="/article" method="post">
+      <input type="text" name="title" placeholder="Title" />
+      <textarea name="description" placeholder="Description"></textarea>
+      <input type="text" name="tags" placeholder="Tags" />
+      <input type="author" name="author" placeholder="Author" />
+      <input type="number" name="likes" placeholder="Likes" />
+      <input class="bg-white p-2" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
